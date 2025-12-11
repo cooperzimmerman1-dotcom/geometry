@@ -175,7 +175,7 @@ while True:
  
     s_text = font.render(f"Score: {score}", True, (220, 220, 220))
     tip_text = font.render("Space/Up to jump • R to reset", True, (160, 160, 180))
-    status_text = font.render("Dead — press R to restart" if not alive else "", True, (255, 120, 120))
+    status_text = font.render("Game Over — press R to restart" if not alive else "", True, (255, 120, 120))
     screen.blit(s_text, (20, 20))
     screen.blit(tip_text, (20, 54))
     if not alive:
